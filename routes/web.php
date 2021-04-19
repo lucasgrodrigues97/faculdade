@@ -44,7 +44,5 @@ Route::get('/alunos/situacao/{alunoId}', 'AlunosController@situacao')->middlewar
 Route::post('/alunos/situacao/{alunoId}/inativar', 'AlunosController@inativarSituacao')->middleware('autenticador');
 Route::post('/alunos/situacao/{alunoId}/ativar', 'AlunosController@ativarSituacao')->middleware('autenticador');
 
-Route::get('/xml/', 'XmlController@index')->middleware('autenticador');
-
 
 
